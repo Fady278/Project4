@@ -1,55 +1,42 @@
-# Project 4 - Clean Code Demo (C++)
+# Project4 - Clean Code ToDo List
 
-A simple C++ project to demonstrate **Clean Code** concepts using classes and object-oriented design.
-
----
-
-## 📌 Overview
-This project implements a basic **To-Do List** application.  
-It highlights the importance of:
-- Meaningful names
-- Small, single-purpose functions
-- Separation of concerns
-- Encapsulation of data
-- Readability and maintainability
+A simple project to demonstrate **Clean Code** concepts using C++.
 
 ---
 
-## 🏗️ Classes
+## 📌 Project Overview
+This project implements a basic **To-Do List application** with two classes:  
+- **Task**: Represents an individual task.  
+- **ToDoList**: Manages a collection of tasks.  
 
-### 1. **Task**
-Represents a single to-do item.
+It’s designed to highlight principles of clean, maintainable, and readable code.
 
+---
+
+## 🏗️ Classes and Their Responsibilities
+
+### 1. Task
+Represents a single to-do item.  
 **Variables**
-- `std::string description` → The task description  
-- `bool completed` → Whether the task is completed  
+- `description` *(string)* → Task description  
+- `completed` *(boolean)* → Status of the task  
 
 **Functions**
-- `setDescription()` → Set the task description  
-- `getDescription()` → Get the task description  
-- `markCompleted()` → Mark the task as completed  
-- `isCompleted()` → Check if the task is completed  
-- `toString()` → Get a string representation of the task  
+- `setDescription` → Set the task description  
+- `getDescription` → Get the task description  
+- `markCompleted` → Mark the task as completed  
+- `isCompleted` → Check if the task is completed  
+- `toString` → Get a string representation of the task  
 
 ---
 
-### 2. **ToDoList**
-Manages a collection of tasks.
-
+### 2. ToDoList
+Represents a collection of tasks.  
 **Variables**
-- `std::vector<Task> tasks` → A list of tasks  
+- `tasks` *(vector<Task>)* → Stores all tasks  
 
 **Functions**
-- `addTask()` → Add a new task to the list  
-- `removeTask()` → Remove a task from the list by index  
-- `markTaskCompleted()` → Mark a task as completed by index  
-- `displayTasks()` → Display all tasks in the list  
-
----
-
-## 🚀 How to Compile & Run
-
-### Using `g++`
-```bash
-g++ main.cpp Task.cpp ToDoList.cpp -o todo_app
-./todo_app
+- `addTask` → Add a new task to the list  
+- `removeTask` → Remove a task from the list by index  
+- `markTaskCompleted` → Mark a task as completed by index  
+- `displayTasks` → Display all tasks in the list  
